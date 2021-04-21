@@ -1,9 +1,18 @@
 import network
 import socket
 import machine
-import json
+import _thread
+import time
 
 from machine import Pin
+from machine import UART
+
+
+    #TX(PIN 3) RX(PIN 4)
+uart = UART(1, 9600)                         # init with given baudrate
+uart.init(9600, bits=8, parity=None, stop=1) # init with given parameters
+
+
 #Fichero HTML a mandar
 html1 = """
 <html>
@@ -41,7 +50,7 @@ Boton=Pin('P10',Pin.IN)
 s = socket.socket(socket.AF_INET, socket.SOCK_STREAM)
 s.bind(('', 80))
 s.listen(5)
-i=0;
+
 while True:
     conn, addr = s.accept()
     print("Got a connection from %s" % str(addr))
@@ -49,13 +58,17 @@ while True:
 
     print(request)
     if 'datos.txt' in request:
-        response='{"vel":"%s"}'%i
+
+        while(uart.any()==0):
+            uart.write('r')
+        datos=uart.read(1) # read up to 1 bytes
+        print(datos)
+        response='{"vel":"%s"}'%datos
     else:
         response = html1
 
     conn.send(response)
     conn.close()
-    i=i+1
     if Boton() == 0:
         break
 s.close()
