@@ -13,22 +13,35 @@ uart = UART(1, 9600)                         # init with given baudrate
 uart.init(9600, bits=8, parity=None, stop=1) # init with given parameters
 
 
+
+
 #Fichero HTML a mandar
 html1 = """
 <html>
 <script>
-var myVar = setInterval(loadDoc, 500);
+var lastX=128;
+var lastY=128;
+var myVar = setInterval(loadDoc, 200);
 function loadDoc() {
   var xhttp = new XMLHttpRequest();
   xhttp.onreadystatechange = function() {
     if (this.readyState == 4 && this.status == 200) {
      document.getElementById("demo").innerHTML = this.responseText;
+     var info=JSON.parse(this.responseText);
+
+     ctx.clearRect(0,0,512,512);
+     drawLine(ctx,256,0,256,512,"#1EB4C8");
+     drawLine(ctx,0,256,512,256,"#1EB4C8");
+
+     drawCircle(info.posx*2,info.posy*2);
+
     }
   };
   xhttp.open("GET", "datos.txt", true);
   xhttp.send();
 }
 </script>
+
 <head>
 <title>Mi primera página web </title>
 </head>
@@ -39,7 +52,36 @@ function loadDoc() {
 pero todo llegará.</p>
 <p id="demo"></p>
 
-<h2> FRASE DEL DÍA: BUENOS DIAS <hr>
+<h2> FRASE DEL DÍA: BUENOS DIAS </h2>
+<canvas id="myCanvas" width="512" height="512" style="border:1px solid #d3d3d3;">
+Your browser does not support the HTML canvas tag.</canvas>
+<p> Cambia </p>
+<script>
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+
+function drawLine(ctx, startX, startY, endX, endY,color){
+    ctx.beginPath();
+    ctx.strokeStyle = color;
+    ctx.moveTo(startX,startY);
+    ctx.lineTo(endX,endY);
+    ctx.stroke();
+}
+
+drawLine(ctx,256,0,256,512,"#1EB4C8");
+drawLine(ctx,0,256,512,256,"#1EB4C8");
+
+function drawCircle(movx,movy){
+    ctx.beginPath();
+    ctx.fillStyle ="#D81515";
+    ctx.arc(movx,512-movy,30,0,2*Math.PI);
+    ctx.fill();
+    ctx.stroke();
+}
+
+</script>
+
 </body>
 </html>
 """
@@ -52,6 +94,7 @@ s.bind(('', 80))
 s.listen(5)
 
 while True:
+
     conn, addr = s.accept()
     print("Got a connection from %s" % str(addr))
     request = conn.recv(1024)
@@ -59,11 +102,18 @@ while True:
     print(request)
     if 'datos.txt' in request:
 
-        while(uart.any()==0):
-            uart.write('r')
-        datos=uart.read(1) # read up to 1 bytes
-        print(datos)
-        response='{"vel":"%s"}'%datos
+
+        uart.write('r')
+        time.sleep(0.05)
+
+        modo=int.from_bytes(uart.read(1),False) # read up to 1 bytes
+        print("%d",modo)
+        posx=int.from_bytes(uart.read(1),False) # read up to 1 bytes
+        print("%d",posx)
+        posy=int.from_bytes(uart.read(1),False) # read up to 1 bytes
+        print("%d",posy)
+
+        response='{"vel":"%d","posx":"%d","posy":"%d"}'%(modo,posx,posy)
     else:
         response = html1
 

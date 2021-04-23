@@ -222,7 +222,7 @@ void inicia_uart(void)
         UCA0BR0 = 130;  // SUPUESTOS 16MHZ y que queremos 9600
         UCA0BR1 = 6;
         //Preescalado=(UCA0BR0+UCABR1*256)=1666
-        //baudrate=Reloj/Preescalado=16MHz/256=9600 baudios
+        //baudrate=Reloj/Preescalado=16MHz/1666=9600 baudios
 
         UCA0CTL1 &= ~UCSWRST;
         IFG2 &= ~(UCA0RXIFG);
