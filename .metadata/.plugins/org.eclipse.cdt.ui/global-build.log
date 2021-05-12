@@ -1,0 +1,281 @@
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building file: "../MSP_general.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="MSP_general.d_raw"  "../MSP_general.c"
+"../MSP_general.c", line 21: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP_general.c", line 23: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../MSP_general.c", line 41: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../MSP_general.c", line 49: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../MSP_general.c", line 57: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../MSP_general.c", line 82: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../MSP_general.c", line 238: remark #1528-D: (ULP 3.1) Detected flag polling using IFG2. Recommend using an interrupt combined with enter LPMx and ISR
+"../MSP_general.c", line 14: remark #1535-D: (ULP 8.1) variable "FinRx" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MSP_general.c", line 14: remark #1535-D: (ULP 8.1) variable "idx" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+"../MSP_general.c", line 16: remark #1535-D: (ULP 8.1) variable "enviar" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../MSP_general.c"
+ 
+Building file: "../FT800_MSP.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="FT800_MSP.d_raw"  "../FT800_MSP.c"
+"../FT800_MSP.c", line 49: remark #1527-D: (ULP 2.1) Detected SW delay loop using __delay_cycles. Recommend using a timer module instead
+"../FT800_MSP.c", line 80: remark #1528-D: (ULP 3.1) Detected flag polling using UCBUSY. Recommend using an interrupt combined with enter LPMx and ISR
+"../FT800_MSP.c", line 569: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 570: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 570: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 628: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 629: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 629: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 650: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 651: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 651: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 668: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 669: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 669: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 697: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../FT800_MSP.c", line 837: remark #1544-D: (ULP 13.1) Detected loop counting up. Recommend loops count down as detecting zeros is easier
+"../FT800_MSP.c", line 837: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 922: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 922: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 923: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 923: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 949: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 963: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 964: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 964: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 987: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 988: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 988: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 989: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 990: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 990: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 1033: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 1034: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 1034: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+"../FT800_MSP.c", line 1035: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 1036: remark #1530-D: (ULP 5.1) Detected divide operation(s). Recommend moving them to RAM during run time or not using as these are processing/power intensive
+"../FT800_MSP.c", line 1036: remark #1533-D: (ULP 6.1) Detected use of multiplication on a device that has no hardware multiplier
+Finished building: "../FT800_MSP.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 44: warning #129-D: loop is not reachable
+"../main.c", line 41: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 44: warning #129-D: loop is not reachable
+"../main.c", line 41: remark #1527-D: (ULP 2.1) Detected SW delay loop using empty loop. Recommend using a timer module instead
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+Building file: "../main.c"
+Invoking: MSP430 Compiler
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
+"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
+Finished building: "../main.c"
+ 
+Building target: "MSP430.out"
+Invoking: MSP430 Linker
+"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
+<Linking>
+remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
+Finished building target: "MSP430.out"
+ 
+
+**** Build Finished ****

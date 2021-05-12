@@ -6,7 +6,23 @@ import time
 
 from machine import Pin
 from machine import UART
+#Para la pantalla Nokia
+from machine import SPI
+import pcd8544
+import framebuf
 
+spi = SPI(0, mode=SPI.MASTER, baudrate=2000000, polarity=0, phase=0, pins=('P23','P22','P17'))
+cs = Pin('P20')
+dc = Pin('P21')
+rst = Pin('P19')
+
+# backlight on
+bl = Pin('P11', Pin.OUT, value=1)
+
+lcd = pcd8544.PCD8544(spi, cs, dc, rst)
+
+buffer = bytearray((lcd.height // 8) * lcd.width)
+framebuf = framebuf.FrameBuffer1(buffer, lcd.width, lcd.height)
 
     #TX(PIN 3) RX(PIN 4)
 uart = UART(1, 9600)                         # init with given baudrate
@@ -98,6 +114,8 @@ while True:
     conn, addr = s.accept()
     print("Got a connection from %s" % str(addr))
     request = conn.recv(1024)
+    framebuf.text('%s'% str(addr), 0, 20, 1)
+    lcd.data(buffer)
 
     print(request)
     if 'datos.txt' in request:

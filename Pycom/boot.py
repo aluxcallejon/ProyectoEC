@@ -6,10 +6,10 @@ from machine import RTC
 meses=["Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto", "Septiembre","Octubre","Noviembre", "Diciembre"]
 rtc=RTC()
 wlan = network.WLAN(mode=network.WLAN.STA)
-wlan.connect('MiFibra-3683',auth=(network.WLAN.WPA2, 'zvMrbC6X'))
+#wlan.connect('MiFibra-3683',auth=(network.WLAN.WPA2, 'zvMrbC6X'))
 
 #MATI PON AQUI TU RED PARA NO ESTAR ELIMINANDO EL DEL OTRO PARA HACER PRUEBAS
-#wlan.connect('MOVISTAR_4149',auth=(network.WLAN.WPA2, 's8JNj2DehX2DwpiGSCzx'))
+wlan.connect('MOVISTAR_4149',auth=(network.WLAN.WPA2, 's8JNj2DehX2DwpiGSCzx'))
 time.sleep(1)
 for i in range(10):
     if wlan.isconnected() == True:

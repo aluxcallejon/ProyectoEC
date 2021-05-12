@@ -4,7 +4,7 @@
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROGRAM.MSP430G2553.ccxml.TI MSP430 USB1/MSP430" value="${build_artifact:MSP430}"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_PROJECT.MSP430G2553.ccxml.TI MSP430 USB1/MSP430" value="MSP430"/>
 <stringAttribute key="com.ti.ccstudio.debug.debugModel.ATTR_TARGET_CONFIG" value="${target_config_active_default:MSP430}"/>
-<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.MSP430G2553.ccxml.TI MSP430 USB1/MSP430" value="C:\Users\luisc\OneDrive\Escritorio\Uni\E.consumo\ProyectoEC\MSP430\Debug\MSP430.out"/>
+<stringAttribute key="com.ti.ccstudio.debug.debugModel.MRU_PROGRAM.MSP430G2553.ccxml.TI MSP430 USB1/MSP430" value="C:\Users\Mati\github\ProyectoEC\MSP430\Debug\MSP430.out"/>
 <listAttribute key="org.eclipse.debug.core.MAPPED_RESOURCE_PATHS">
 <listEntry value="/MSP430"/>
 </listAttribute>
