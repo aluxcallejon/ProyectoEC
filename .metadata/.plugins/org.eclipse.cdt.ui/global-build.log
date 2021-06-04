@@ -279,3 +279,27 @@ Finished building target: "MSP430.out"
  
 
 **** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****
+
+**** Build of configuration Debug for project MSP430 ****
+
+"D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
+ 
+gmake[1]: 'MSP430.out' is up to date.
+
+**** Build Finished ****

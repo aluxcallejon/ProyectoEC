@@ -3,18 +3,6 @@
 
 "D:\\ccs\\utils\\bin\\gmake" -k -j 8 all -O 
  
-Building file: "../main.c"
-Invoking: MSP430 Compiler
-"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --include_path="D:/ccs/ccs_base/msp430/include" --include_path="C:/Users/Mati/github/ProyectoEC/MSP430" --include_path="D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number --preproc_with_compile --preproc_dependency="main.d_raw"  "../main.c"
-"../main.c", line 12: remark #1535-D: (ULP 8.1) variable "modo" is used as a constant. Recommend declaring variable as either 'static const' or 'const'
-Finished building: "../main.c"
- 
-Building target: "MSP430.out"
-Invoking: MSP430 Linker
-"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/bin/cl430" -vmsp --use_hw_mpy=none --advice:power=all --define=__MSP430G2553__ -g --printf_support=minimal --diag_warning=225 --diag_wrap=off --display_error_number -z -m"MSP430.map" --heap_size=80 --stack_size=80 -i"D:/ccs/ccs_base/msp430/include" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/lib" -i"D:/ccs/tools/compiler/ti-cgt-msp430_20.2.2.LTS/include" --reread_libs --diag_wrap=off --display_error_number --warn_sections --xml_link_info="MSP430_linkInfo.xml" --use_hw_mpy=none --rom_model -o "MSP430.out" "./FT800_MSP.obj" "./MSP_general.obj" "./main.obj" "../lnk_msp430g2553.cmd"  -llibc.a 
-<Linking>
-remark #10372-D: (ULP 4.1) Detected uninitialized Port 3 in this project. Recommend initializing all unused ports to eliminate wasted current consumption on unused pins.
-Finished building target: "MSP430.out"
- 
+gmake[1]: 'MSP430.out' is up to date.
 
 **** Build Finished ****

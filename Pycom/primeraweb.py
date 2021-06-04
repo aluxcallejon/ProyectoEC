@@ -23,7 +23,8 @@ lcd = pcd8544.PCD8544(spi, cs, dc, rst)
 
 buffer = bytearray((lcd.height // 8) * lcd.width)
 framebuf = framebuf.FrameBuffer1(buffer, lcd.width, lcd.height)
-
+framebuf.text('192.168.', 0, 0, 1)
+lcd.data(buffer)
     #TX(PIN 3) RX(PIN 4)
 uart = UART(1, 9600)                         # init with given baudrate
 uart.init(9600, bits=8, parity=None, stop=1) # init with given parameters
@@ -114,7 +115,7 @@ while True:
     conn, addr = s.accept()
     print("Got a connection from %s" % str(addr))
     request = conn.recv(1024)
-    framebuf.text('%s'% str(addr), 0, 20, 1)
+    framebuf.text('%s'% str(addr), 0, 12, 1)
     lcd.data(buffer)
 
     print(request)

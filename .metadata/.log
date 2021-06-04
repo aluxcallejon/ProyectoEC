@@ -257,3 +257,55 @@ No USB FET was found
 !ENTRY com.ti.ccstudio.debug 1 0 2021-05-12 17:09:38.435
 !MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
 
+!SESSION 2021-06-02 17:12:04.642 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-06-02 17:12:12.431
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-06-02 17:12:12.447
+!MESSAGE debugServerDir=D:/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-06-02 17:12:57.221
+!MESSAGE CCS IDE session started!
+	CCS build: 10.2.0.00009
+	CCS location: D:/ccs
+	Workspace location: C:/Users/Mati/github/ProyectoEC
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-06-02 17:12:59.966
+!MESSAGE CCS HTTP adapter started! [ccs.port:63621] - Open 'http://localhost:63621/ide' in web browser to see listing of available APIs...
+!SESSION 2021-06-04 11:51:36.183 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_144
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_ES
+Framework arguments:  -product com.ti.ccstudio.branding.product
+Command-line arguments:  -os win32 -ws win32 -arch x86_64 -product com.ti.ccstudio.branding.product
+
+!ENTRY com.ti.common.core 1 0 2021-06-04 11:51:49.289
+!MESSAGE path=ccs_base/DebugServer
+
+!ENTRY com.ti.common.core 1 0 2021-06-04 11:51:49.316
+!MESSAGE debugServerDir=D:/ccs/ccs_base/DebugServer
+
+!ENTRY com.ti.ccstudio.ui 1 0 2021-06-04 11:52:43.668
+!MESSAGE CCS IDE session started!
+	CCS build: 10.2.0.00009
+	CCS location: D:/ccs
+	Workspace location: C:/Users/Mati/github/ProyectoEC
+
+!ENTRY com.ti.ccstudio.project.ui.webcontent 1 0 2021-06-04 11:52:45.781
+!MESSAGE CCS HTTP adapter started! [ccs.port:56611] - Open 'http://localhost:56611/ide' in web browser to see listing of available APIs...
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-06-04 11:59:27.259
+!MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
+
+
+!ENTRY com.ti.ccstudio.debug 1 0 2021-06-04 12:02:01.977
+!MESSAGE DS_ERROR: MSP430: JTAG Communication Error 
+
